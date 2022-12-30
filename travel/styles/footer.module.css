@@ -1,0 +1,8 @@
+.link:hover {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+}
+.link:visited {
+  text-decoration: none;
+}

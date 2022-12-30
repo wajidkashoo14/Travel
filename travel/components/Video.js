@@ -4,8 +4,8 @@ import React from "react";
 function Video() {
   return (
     <Container
-      maxW={"80%"}
-      height={"80vh"}
+      maxW={"100%"}
+      minHeight={"80vh"}
       bg={"#fff"}
       mt={"10rem"}
       mx={"auto"}

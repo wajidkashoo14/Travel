@@ -1,0 +1,33 @@
+.input {
+  width: 15rem;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid #dae4e0;
+  border-radius: 0.3rem;
+}
+
+.input:focus {
+  border: 1px solid #06283d;
+}
+.textarea {
+  border: 1px solid #dae4e0;
+  height: 30vh;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+}
+.textarea:focus {
+  border: 1px solid #06283d;
+}
+
+.heading {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+
+.map {
+  width: 80vw;
+  height: 30rem;
+}

@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -13,6 +13,18 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.heading {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
 }
 
 @media (prefers-color-scheme: dark) {

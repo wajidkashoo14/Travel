@@ -1,42 +1,45 @@
-import { Box, Image, Text } from "@chakra-ui/react";
-import { AiTwotoneStar } from "react-icons/ai";
-import { FaQuoteRight } from "react-icons/fa";
+import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import { FaQuoteRight } from "react-icons/fa";
 
-function Testimonialcard() {
+function Testimonialcard({ name, img, text }) {
   return (
     <Box
-      w={"350px"}
-      h={"350px"}
+      width={{ base: "100%", md: "100%", lg: "50rem" }}
       p={"8"}
-      border={"2px solid #E5E5E5"}
       position={"relative"}
+      display={"flex"}
+      flexDir={"column"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      // mt={{ base: "4rem", md: "3rem", lg: "0" }}
     >
-      <Box position={"absolute"} top={"10%"} right={"10%"} fontSize={"1.6rem"}>
-        <FaQuoteRight color="#5191FA" />
+      <Box display={"grid"} placeItems={"center"}>
+        <Image
+          src={img}
+          boxSize="150px"
+          objectFit="cover"
+          borderRadius={"50%"}
+          filter={"drop-shadow(0 0 0.45rem crimson)"}
+        />
+        <Text py={"4"} color={"#06283d"} fontWeight={"500"}>
+          {name}
+        </Text>
       </Box>
-      <Box display={"flex"} alignContent={"flex-start"} gap={"2"}>
-        <Box>
-          <Image src="avatar.jpg" w={"80px"} h={"80px"} borderRadius={"50%"} />
-        </Box>
-        <Box my={"auto"} alignItems={"center"} justifyContent={"center"}>
-          <Text>Wajid Kashoo</Text>
-          <Box display={"flex"}>
-            <AiTwotoneStar color={"#FFDC00"} />
-            <AiTwotoneStar color={"#FFDC00"} />
-            <AiTwotoneStar color={"#FFDC00"} />
-            <AiTwotoneStar color={"#FFDC00"} />
-            <AiTwotoneStar color={"#FFDC00"} />
-          </Box>
-        </Box>
+
+      <Box>
+        <Text py={"10"} fontWeight={"300"}>
+          {text}
+        </Text>
       </Box>
       <Box>
-        <Text py={"5"} textAlign={"left"} fontWeight={"300"}>
-          I had an amazing trip - all thanks to the travel agency. No hurdles at
-          all. Everything was managed very smoothly, they had planned it very
-          well. They go out of their way to help us out and take utmost care of
-          their customers. Best travel agency! I highly recommend them.
-        </Text>
+        <FaQuoteRight
+          fontSize={"2rem"}
+          color={"#06283d"}
+          onClick={(e) => {
+            setIndex(index + 1);
+          }}
+        />
       </Box>
     </Box>
   );

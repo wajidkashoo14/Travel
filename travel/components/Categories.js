@@ -1,35 +1,50 @@
-import { Box, Button, Image } from "@chakra-ui/react";
+import { Box, Button, Image, Heading, Text, Container } from "@chakra-ui/react";
 import React from "react";
+import { GoLocation } from "react-icons/go";
+import { AiOutlineHeart } from "react-icons/ai";
 
-function Categories() {
+function Categories({ type, img }) {
   return (
     <Box
       position={"relative"}
-      borderRadius={"5px"}
+      borderRadius={"8px"}
       cursor={"pointer"}
       overflow={"hidden"}
       transition={"all 0.2s"}
+      minH={"400px"}
+      maxW={"550px"}
     >
       <Image
-        src="valley.jpg"
+        src={img}
         objectFit={"cover"}
-        h={{ base: "100%", md: "165px", lg: "166px" }}
+        h={{ base: "100%", md: "400px", lg: "350px" }}
+        loading={"lazy"}
       />
-      <Button
-        color={"#fff"}
+      <Heading
         position={"absolute"}
-        px={"2"}
-        colorScheme="#fff"
-        py={"1"}
-        variant="outline"
-        borderBottomRightRadius={"3px"}
-        borderTopRightRadius={"3px"}
-        top={"38%"}
-        left={"25%"}
-        _hover={{ opacity: "0.8" }}
+        top={"70%"}
+        left={"5%"}
+        fontSize={"2xl"}
+        color={"#fff"}
+        fontWeight={"700"}
       >
-        Kashmir tour packages
-      </Button>
+        {type}
+      </Heading>
+      <Box position={"absolute"} top={"10%"} right={"5%"}>
+        <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
+      </Box>
+      <Box
+        position={"absolute"}
+        bottom={"15%"}
+        left={"5%"}
+        display={"flex"}
+        gap={"3"}
+      >
+        <GoLocation fontSize={"1.5rem"} color={"#fff"} />
+        <Text color={"#fff"} fontSize={"1.3rem"}>
+          Kashmir
+        </Text>
+      </Box>
     </Box>
   );
 }

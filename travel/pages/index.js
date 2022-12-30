@@ -1,33 +1,38 @@
-import Conatactstrip from "../components/Conatactstrip";
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Input from "../components/Input";
-import Dialogbox from "../components/Dialogbox";
 import Cards from "../components/Cards";
 import Tourcategories from "../components/Tourcategories";
-import TrendingDestinations from "../components/TrendingDestinations";
-import Video from "../components/Video";
 import Subscribe from "../components/Subscribe";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import Discription from "../components/Discription";
+import Explore from "../components/Explore";
+import Banner from "../components/Banner";
+import {
+  Box,
+  Container,
+  Image,
+  Flex,
+  Heading,
+  Text,
+  ListItem,
+  List,
+  UnorderedList,
+} from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <>
-      <Conatactstrip />
-      <Navbar />
+    <Box scrollBehavior={"smooth"}>
       <Hero />
       <Input />
-      <Dialogbox />
+      <Discription />
       <Cards />
+      <Banner />
       <Tourcategories />
-      <TrendingDestinations />
-      <Video />
+      <Explore />
       <Subscribe />
       <Testimonials />
       <Contact />
-      <Footer />
-    </>
+    </Box>
   );
 }

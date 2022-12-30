@@ -1,0 +1,34 @@
+.heading {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+}
+
+.heading__secondary {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+
+.button {
+  background-color: transparent;
+  color: #0f659a;
+  border-bottom: 1px solid #0f659a;
+  padding: 0.5rem 0.2rem;
+  margin-top: 1rem;
+  transition: all 0.3s;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.button:hover {
+  background-color: #06283d;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}

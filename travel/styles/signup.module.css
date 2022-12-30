@@ -1,0 +1,20 @@
+.heading {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+
+.input {
+  background-color: #fff;
+  width: 100%;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  font-size: 1.2rem;
+}
+
+.input:focus {
+  border: 1px solid #06283d;
+}

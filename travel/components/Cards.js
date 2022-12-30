@@ -1,23 +1,26 @@
 import { Container, Heading, Box } from "@chakra-ui/react";
 import React from "react";
 import Tourcard from "./Tourcard";
-
+import styles from "../styles/discription.module.css";
 function Cards() {
   return (
-    <Container maxW={"80vw"} height={"60vh"} bg={"#fff"}>
-      <Heading my={"5"}>Best rated Tours</Heading>
-
-      <Box
-        display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        gap={"5"}
+    <Container
+      maxW="100vw"
+      minHeight={{ base: "90vh", md: "85", lg: "100vh" }}
+      backgroundColor={"#F7F7F7"}
+      display={"flex"}
+      justifyContent={"center"}
+      flexDir="column"
+    >
+      <Heading
+        textAlign={"center"}
+        fontSize={{ base: "1.2rem", md: "1.2rem", lg: "2.2rem" }}
+        className={styles.heading}
       >
-        <Tourcard />
-        <Tourcard />
-        <Tourcard />
-        <Tourcard />
-      </Box>
+        Best rated Tours
+      </Heading>
+
+      <Tourcard />
     </Container>
   );
 }

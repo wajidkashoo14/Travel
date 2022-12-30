@@ -1,0 +1,6 @@
+.heading {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+}

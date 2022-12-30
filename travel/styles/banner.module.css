@@ -1,0 +1,21 @@
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #06283d;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 320px) {
+  .button {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .button {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
+}
