@@ -8,7 +8,7 @@ function Banner() {
   return (
     <Container
       maxW={"100%"}
-      minHeight={{ base: "65vh", md: "80vh", lg: "60vh" }}
+      minHeight={{ base: "65vh", md: "80vh", lg: "50vh" }}
       backgroundColor={"#F7F7F7"}
       display={"flex"}
       justifyContent={"center"}

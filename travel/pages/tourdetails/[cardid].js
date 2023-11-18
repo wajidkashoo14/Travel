@@ -194,7 +194,7 @@ function Tourdetails() {
         >
           <Heading
             fontWeight={"500"}
-            textTransform={"uppercase"}
+            textTransform={"capitalize"}
             py={"5"}
             className={styles.heading}
             mt={"5"}
@@ -595,7 +595,7 @@ function Tourdetails() {
                   <Heading
                     className={styles.heading}
                     fontWeight={"500"}
-                    textTransform={"uppercase"}
+                    textTransform={"capitalize"}
                     fontSize={"xl"}
                   >
                     Write a review

@@ -6,7 +6,7 @@ function Cards() {
   return (
     <Container
       maxW="100vw"
-      minHeight={{ base: "90vh", md: "85", lg: "100vh" }}
+      minHeight={{ base: "80vh", md: "85", lg: "100vh" }}
       backgroundColor={"#F7F7F7"}
       display={"flex"}
       justifyContent={"center"}

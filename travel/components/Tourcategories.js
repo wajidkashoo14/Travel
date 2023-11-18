@@ -52,26 +52,22 @@ function Tourcategories() {
               loading={"lazy"}
               borderRadius={"8px"}
             />
-            <Heading
-              position={"absolute"}
-              top={{ base: "65%", md: "65%", lg: "75%" }}
-              left={"5%"}
-              fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
-              color={"#fff"}
-              fontWeight={"700"}
-            >
-              Save 15% On 2023 Adventures
-            </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
             <Box
               position={"absolute"}
-              bottom={"8%"}
-              left={"5%"}
-              display={"flex"}
-              gap={"3"}
+              bottom={{ base: "5%", md: "5%", lg: "5%" }}
+              left={"3%"}
             >
+              <Heading
+                fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
+                color={"#fff"}
+                fontWeight={"700"}
+              >
+                Save 15% On 2023 Adventures
+              </Heading>
+
               <Text
                 color={"#fff"}
                 fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
@@ -91,39 +87,33 @@ function Tourcategories() {
             my={{ base: "1rem" }}
           >
             <Image
-              src="./tourone.jpg"
+              src="./cycling.jpg"
               h={{ base: "350px", md: "350px", lg: "400px" }}
               w={{ base: "100%", md: "100%", lg: "600px" }}
               loading={"lazy"}
               borderRadius={"8px"}
             />
-            <Heading
-              position={"absolute"}
-              top={{ base: "60%", md: "65%", lg: "75%" }}
-              left={"4%"}
-              fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
-              color={"#fff"}
-              fontWeight={"700"}
-            >
-              Your Guide to Cycling Adventures
-            </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
-            <Box
-              position={"absolute"}
-              bottom={"8%"}
-              left={"4%"}
-              display={"flex"}
-              gap={"3"}
-            >
-              <Text
+            <Box position={"absolute"} bottom={"5%"} left={"3%"}>
+              <Heading
+                fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
                 color={"#fff"}
-                fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
+                fontWeight={"700"}
               >
-                Book our collection of relaxing,flat rides and challenging
-                hairpin climbs
-              </Text>
+                Your Guide to Cycling Adventures
+              </Heading>
+
+              <Box display={"flex"} gap={"2"}>
+                <Text
+                  color={"#fff"}
+                  fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
+                >
+                  Book our collection of relaxing,flat rides and challenging
+                  hairpin climbs
+                </Text>
+              </Box>
             </Box>
           </Box>
         </Flex>
@@ -134,8 +124,9 @@ function Tourcategories() {
           cursor={"pointer"}
           overflow={"hidden"}
           transition={"all 0.2s"}
-          minH={"400px"}
-          maxW={"1380px"}
+          h={{ base: "350px", md: "350px", lg: "400px" }}
+          w={{ base: "100%", md: "100%", lg: "1250px" }}
+          my={{ base: "1rem" }}
         >
           <Image
             src="https://www.peakadventuretour.com/blog/wp-content/uploads/2019/02/Dal-Lake-Srinagar.jpg"
@@ -144,33 +135,27 @@ function Tourcategories() {
             loading={"lazy"}
             borderRadius={"8px"}
           />
-          <Heading
-            position={"absolute"}
-            top={{ base: "57%", md: "65%", lg: "75%" }}
-            left={{ base: "5%", md: "5%", lg: "2%" }}
-            fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
-            color={"#fff"}
-            fontWeight={"700"}
-          >
-            Your Guide to Cultural Adventures
-          </Heading>
           <Box position={"absolute"} top={"10%"} right={"5%"}>
             <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
           </Box>
-          <Box
-            position={"absolute"}
-            bottom={{ base: "15%", md: "10%", lg: "5%" }}
-            left={{ base: "5%", md: "5%", lg: "2%" }}
-            display={"flex"}
-            gap={"3"}
-          >
-            <Text
+          <Box position={"absolute"} bottom={"5%"} left={["3%", "3%", "2%"]}>
+            <Heading
+              fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
               color={"#fff"}
-              fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
+              fontWeight={"700"}
             >
-              Discover ancient ruins,town squares and local delicacies with the
-              experts
-            </Text>
+              Your Guide to Cultural Adventures
+            </Heading>
+
+            <Box display={"flex"} gap={"3"}>
+              <Text
+                color={"#fff"}
+                fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
+              >
+                Discover ancient ruins,town squares and local delicacies with
+                the experts
+              </Text>
+            </Box>
           </Box>
         </Box>
         <Flex gap={"10"} display={{ base: "block", md: "block", lg: "flex" }}>
@@ -191,32 +176,22 @@ function Tourcategories() {
               loading={"lazy"}
               borderRadius={"8px"}
             />
-            <Heading
-              position={"absolute"}
-              top={{ base: "77%", md: "60%", lg: "75%" }}
-              left={"5%"}
-              fontSize={"3xl"}
-              color={"#fff"}
-              fontWeight={"700"}
-            >
-              Win a LifeOfAdventure
-            </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
-            <Box
-              position={"absolute"}
-              bottom={{ base: "5%", md: "5%", lg: "10%" }}
-              left={"5%"}
-              display={"flex"}
-              gap={"3"}
-            >
-              <Text
-                color={"#fff"}
-                fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
-              >
-                Win 1 trip.EveryYear.ForLife.EnterNow
-              </Text>
+            <Box position={"absolute"} bottom={"5%"} left={"3%"}>
+              <Heading fontSize={"3xl"} color={"#fff"} fontWeight={"700"}>
+                Win a LifeOfAdventure
+              </Heading>
+
+              <Box display={"flex"} gap={"3"}>
+                <Text
+                  color={"#fff"}
+                  fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
+                >
+                  Win 1 trip.EveryYear.ForLife.EnterNow
+                </Text>
+              </Box>
             </Box>
           </Box>
           <Box
@@ -236,32 +211,22 @@ function Tourcategories() {
               loading={"lazy"}
               borderRadius={"8px"}
             />
-            <Heading
-              position={"absolute"}
-              top={{ base: "77%", md: "60%", lg: "75%" }}
-              left={"5%"}
-              fontSize={"3xl"}
-              color={"#fff"}
-              fontWeight={"700"}
-            >
-              Last Minute Vacations
-            </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
-            <Box
-              position={"absolute"}
-              bottom={{ base: "4%", md: "5%", lg: "10%" }}
-              left={"5%"}
-              display={"flex"}
-              gap={"3"}
-            >
-              <Text
-                color={"#fff"}
-                fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
-              >
-                Spontaneous adventures at your fingertips
-              </Text>
+            <Box position={"absolute"} bottom={"5%"} left={"3%"}>
+              <Heading fontSize={"3xl"} color={"#fff"} fontWeight={"700"}>
+                Last Minute Vacations
+              </Heading>
+
+              <Box display={"flex"} gap={"3"}>
+                <Text
+                  color={"#fff"}
+                  fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
+                >
+                  Spontaneous adventures at your fingertips
+                </Text>
+              </Box>
             </Box>
           </Box>
           <Box
@@ -281,32 +246,22 @@ function Tourcategories() {
               loading={"lazy"}
               borderRadius={"8px"}
             />
-            <Heading
-              position={"absolute"}
-              top={{ base: "77%", md: "60%", lg: "75%" }}
-              left={{ base: "4%", md: "4%", lg: "5%" }}
-              fontSize={"3xl"}
-              color={"#fff"}
-              fontWeight={"700"}
-            >
-              Kashmir Holidays
-            </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
-            <Box
-              position={"absolute"}
-              bottom={{ base: "4%", md: "5%", lg: "10%" }}
-              left={{ base: "4%", md: "4%", lg: "5%" }}
-              display={"flex"}
-              gap={"3"}
-            >
-              <Text
-                color={"#fff"}
-                fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
-              >
-                {` if there is a heaven on earth It's here!`}
-              </Text>
+            <Box position={"absolute"} bottom={"5%"} left={"3%"}>
+              <Heading fontSize={"3xl"} color={"#fff"} fontWeight={"700"}>
+                Kashmir Holidays
+              </Heading>
+
+              <Box display={"flex"} gap={"3"}>
+                <Text
+                  color={"#fff"}
+                  fontSize={{ base: "1rem", md: "1rem", lg: "1.1rem" }}
+                >
+                  {` if there is a heaven on earth It's here!`}
+                </Text>
+              </Box>
             </Box>
           </Box>
         </Flex>

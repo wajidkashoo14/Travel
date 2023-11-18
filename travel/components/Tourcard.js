@@ -1,14 +1,4 @@
-import {
-  Box,
-  Container,
-  Image,
-  Text,
-  Heading,
-  Link,
-  Flex,
-  Button,
-  Slider,
-} from "@chakra-ui/react";
+import { Box, Image, Text, Heading, Link } from "@chakra-ui/react";
 
 import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
@@ -28,7 +18,7 @@ function Tourcard({}) {
     <Box p={{ base: "0", md: "4", lg: "10" }} display={"flex"}>
       <Swiper
         modules={[Navigation, Pagination]}
-        spaceBetween={1}
+        spaceBetween={0}
         slidesPerView={4}
         pagination={{ clickable: true }}
         breakpoints={{
@@ -50,16 +40,15 @@ function Tourcard({}) {
             <SwiperSlide key={card.id}>
               <Box
                 display={"flex"}
-                onClick={() => router.push(`./tourdetails/${card.id}`)}
+                onClick={() => router.push(`./tourdetails/${card?.id}`)}
                 className="card"
                 py={{ base: "3rem", md: "2rem", lg: "5rem" }}
-                mx={{ base: "0rem", md: "1rem", lg: "2rem" }}
+                mx={{ base: "0rem", md: "1rem", lg: "0rem" }}
                 fontFamily={"Montserrat"}
-                // overflowX={{ base: "scroll" }}
               >
                 <Box
                   w={"300px"}
-                  h={"430px"}
+                  h={"400px"}
                   boxShadow={"md"}
                   display={"flex"}
                   flexDir={"column"}
@@ -70,9 +59,10 @@ function Tourcard({}) {
                     <Image
                       src={card.img}
                       objectFit={"cover"}
-                      h={"250px"}
+                      h={"220px"}
                       w={"100%"}
                       loading={"lazy"}
+                      alt={''}
                     />
                     <Text
                       background={"#ED0925"}

@@ -16,7 +16,7 @@
   height: 100vh !important;
 }
 .link {
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: grid;
   place-items: center;
   font-size: 1.2rem;
@@ -30,6 +30,9 @@
   font-size: 1.1rem;
   border-radius: 0.3rem;
   font-family: "Montserrat", sans-serif;
+}
+.a {
+  font-weight: bold;
 }
 
 @keyframes blinkCursor {

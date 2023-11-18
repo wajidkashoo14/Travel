@@ -48,6 +48,7 @@ function Activities() {
             objectFit={"cover"}
             backgroundPosition={"top"}
             loading={"lazy"}
+            alt=""
           />
         </Box>
       </Flex>
@@ -65,6 +66,7 @@ function Activities() {
           height={"350px"}
           borderRadius={"5"}
           boxShadow={"lg"}
+          display={["none", "none", "flex"]}
         >
           <FormControl
             display={"flex"}

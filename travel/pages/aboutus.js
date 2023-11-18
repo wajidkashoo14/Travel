@@ -1,12 +1,10 @@
 import {
   Box,
-  Container,
   Image,
   Flex,
   Heading,
   Text,
   ListItem,
-  List,
   UnorderedList,
 } from "@chakra-ui/react";
 import React from "react";
@@ -31,19 +29,19 @@ function aboutus() {
           />
         </Box>
         <Box
-          p={"8"}
+          p={["1", "1", "8"]}
           display={"flex"}
           flexDir={"column"}
           gap={"2"}
-          pr={"18rem"}
-          mx={"5rem"}
+          pr={["0", "0", "18rem"]}
+          mx={["1rem", "1rem", "5rem"]}
         >
           <Heading
-            fontSize={"3xl"}
+            fontSize={["xl", "xl", "3xl"]}
             fontWeight={"500"}
             className={styles.heading}
             fontFamily={"Montserrat"}
-            py={"3"}
+            py={["1", "1", "3"]}
           >
             About us
           </Heading>
@@ -62,13 +60,13 @@ function aboutus() {
             Handcraft Tour Packages that are just “right for them”.
           </Text>
           <Heading
-            fontSize={"2xl"}
+            fontSize={["xl", "xl", "2xl"]}
             fontWeight={"500"}
             className={styles.heading}
             py={"3"}
             fontFamily={"Montserrat"}
           >
-            WE LOVE TO KEEP IT SIMPLE AND AUTHENTIC
+            we love to keep it simple and authentic
           </Heading>
           <Text color={"#5e5e5e"}>
             Our Tour Advisors will understand your Touring Expectations and
@@ -84,12 +82,12 @@ function aboutus() {
           </Text>
           <Text color={"#5e5e5e"}>That’s Simple and Authentic! Right?</Text>
           <Heading
-            fontSize={"2xl"}
+            fontSize={["xl", "xl", "2xl"]}
             fontWeight={"500"}
             className={styles.heading}
             py={"3"}
           >
-            WHAT WE OFFER?
+            what we offer?
           </Heading>
           <UnorderedList color={"#5e5e5e"}>
             <ListItem>Tour Packages explore</ListItem>
@@ -115,12 +113,12 @@ function aboutus() {
             other Popular Cities.
           </Text>
           <Heading
-            fontSize={"2xl"}
+            fontSize={["xl", "xl", "2xl"]}
             fontWeight={"500"}
             className={styles.heading}
             py={"3"}
           >
-            HOW WE ROLL?
+            how we roll?
           </Heading>
           <Text color={"#5e5e5e"}>With a network of more than:</Text>
           <UnorderedList color={"#5e5e5e"}>
@@ -134,12 +132,12 @@ function aboutus() {
             other Popular Cities.
           </Text>
           <Heading
-            fontSize={"2xl"}
+            fontSize={["xl", "xl", "2xl"]}
             fontWeight={"500"}
             className={styles.heading}
             py={"3"}
           >
-            About Us! WHATS MAKES US SO UNIQUE?
+            About Us! what makes us so unique
           </Heading>
           <Text color={"#5e5e5e"}>The answer is, our Philosophy.</Text>
           <Text color={"#5e5e5e"}>

@@ -1,13 +1,5 @@
-import {
-  Box,
-  Flex,
-  Button,
-  Input,
-  StylesProvider,
-  Heading,
-  Textarea,
-} from "@chakra-ui/react";
-import React, { useState } from "react";
+import { Box, Flex, Button, Input, Heading, Textarea } from "@chakra-ui/react";
+import React from "react";
 import styles from "../styles/modal.module.css";
 
 function Modal({ closeModal }) {
@@ -20,14 +12,14 @@ function Modal({ closeModal }) {
       justifyContent={"center"}
       alignItems={"center"}
       background={"rgba(0,0,0,0.8)"}
-      zIndex={"500000"}
+      zIndex={"200000"}
       top={"0"}
       left={"0"}
       fontFamily={"Montserrat"}
     >
       <Flex
         width={{ base: "90%", md: "90%", lg: "40rem" }}
-        height={["70vh", "70vh", "80vh"]}
+        height={["80vh", "80vh", "80vh"]}
         flexDir={"column"}
         position={"relative"}
         background={"#fff"}
@@ -37,19 +29,26 @@ function Modal({ closeModal }) {
       >
         <Button
           position={"absolute"}
-          top={"5%"}
-          right={"5%"}
+          top={"4%"}
+          right={"4%"}
           onClick={() => closeModal(false)}
-          zIndex={"1000000"}
+          zIndex={"2000000"}
           fontSize={{ base: ".7rem", md: ".8rem", lg: "1.5rem" }}
           size={{ base: "sm", md: "sm", lg: "md" }}
         >
           X
         </Button>
-        <Box display={"flex"} flexDir={"column"} gap={"5"} mt={"6"}>
+        <Box
+          display={"flex"}
+          flexDir={"column"}
+          gap={"5"}
+          mt={"6"}
+          p={["2", "2", "0"]}
+        >
           <Heading
             className={styles.heading}
             fontSize={{ base: "xl", md: "xl", lg: "2xl" }}
+            textAlign={"left"}
           >
             Send an enquiry
           </Heading>
@@ -85,6 +84,7 @@ function Modal({ closeModal }) {
             _hover={{ bg: "blue.500", color: " white" }}
             style={{ padding: "1rem 2rem" }}
             textTransform={"uppercase"}
+            fontSize={["14px", "16px", "16px"]}
           >
             send now
           </Button>

@@ -3,4 +3,5 @@
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
 }

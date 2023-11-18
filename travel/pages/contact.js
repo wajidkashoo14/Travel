@@ -7,8 +7,6 @@ import {
   Input,
   Textarea,
   Button,
-  AspectRatio,
-  ListItem,
 } from "@chakra-ui/react";
 import React from "react";
 import styles from "../styles/contact.module.css";
@@ -21,66 +19,77 @@ function contact() {
     <Container
       bg={"#C8C9C3"}
       maxW={"100vw"}
-      py={"10rem"}
-      display={"grid"}
-      placeItems={"center"}
+      py={["8rem", "8rem", "10rem"]}
       paddingBottom={"6rem"}
       fontFamily={"Montserrat"}
+      display={"flex"}
+      flexDir={"column"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      minH={"100vh"}
     >
       <Flex
         bg={"#EDEDEB"}
-        w={"80vw"}
-        height={"100vh"}
+        w={["100vw", "100vw", "80vw"]}
+        minHeight={"100vh"}
         justifyContent={"center"}
         alignItems={"center"}
-        p={"10"}
+        p={["2", "2", "10"]}
         boxShadow={"lg"}
       >
-        <Box>
+        <Box w={"100%"} mx={["auto", "auto"]} mr={["auto"]}>
           <Image
             src="login.jpg"
-            minWidth={"40vw"}
+            w={["100%", "100%", "100vw"]}
             height={"90vh"}
             objectFit={"cover"}
             position={"relative"}
             zIndex={"1"}
+            alt=""
           />
         </Box>
         <Box
-          w={"600rem"}
+          w={["100%", "100%", "40rem"]}
           bg={"#fff"}
-          height={"100vh"}
-          ml={"-15rem"}
+          minHeight={"80vh"}
+          mx={["auto", "auto"]}
           zIndex={"1000"}
           display={"flex"}
-          justifyContent={"center"}
+          justifyContent={["space-between", "center"]}
           alignItems={"center"}
           gap={"10"}
+          position={["absolute", "absolute", ""]}
+          top={["14%", "14%", "12%"]}
+          p={["1rem 1rem", "1rem 1rem", "1rem 0rem"]}
+          boxShadow={["md", "md", "xl"]}
         >
           <Box
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
-            flexWrap={"nowrap"}
+            flexWrap={"wrap"}
             gap={"10"}
             flexDir={"column"}
-            width={"90%"}
-            border={"1px solid black"}
-            p={"3rem 6rem"}
+            width={["100%", "100%", "95%"]}
+            border={"1px solid #C8CDC9"}
+            p={["2rem 1rem", "2rem 1rem", "3rem 4rem"]}
           >
             <Heading className={styles.heading}>Contact us</Heading>
-            <Flex gap={"5"}>
+            <Flex
+              gap={"5"}
+              flexDir={["column", "column", "flex"]}
+              width={["100%", "100%"]}
+              flexWrap={"wrap"}
+            >
               <Input
                 placeholder="Your Name"
                 type="text"
-                width={"50%"}
                 size={"lg"}
                 fontSize={"1rem"}
               />
               <Input
                 placeholder="Email"
                 type="email"
-                width={"50%"}
                 size={"lg"}
                 fontSize={"1rem"}
               />
@@ -91,6 +100,7 @@ function contact() {
               type="number"
               size={"lg"}
               fontSize={"1rem"}
+              width={["100%", "100%", ""]}
             />
 
             <Textarea
@@ -113,39 +123,39 @@ function contact() {
         </Box>
       </Flex>
       <Flex
-        h={"10rem "}
-        width={"80vw"}
+        minH={"10rem "}
+        width={["100%", "100%", "40rem"]}
         bg={"#FFFFFF"}
         justifyContent={"space-around"}
         alignItems={"center"}
-        mt={"10rem"}
-        p={"10"}
+        mt={["30rem", "30rem", "15rem"]}
+        p={["2", "2", "1.5rem"]}
+        flexDir={["column", "column", "flex"]}
+        mx={["auto", "auto"]}
+        boxShadow={["md", "md", "xl"]}
       >
         <Flex
-          display={"flex"}
           gap={"5"}
           alignItems={"center"}
-          fontSize={"1.3rem"}
+          fontSize={["14px", "14px", "1.3rem"]}
           textTransform={"uppercase"}
         >
           <AiOutlineMobile color={"#5191FA"} />
           9596103894
         </Flex>
         <Flex
-          display={"flex"}
           gap={"5"}
           alignItems={"center"}
-          fontSize={"1.3rem"}
+          fontSize={["14px", "14x", "1.3rem"]}
           textTransform={"uppercase"}
         >
           <AiOutlineMail color={"#5191FA"} />
           Wkashoo@gmail.com
         </Flex>
         <Flex
-          display={"flex"}
           gap={"5"}
           alignItems={"center"}
-          fontSize={"1.3rem"}
+          fontSize={["14px", "14px", "1.3rem"]}
           textTransform={"uppercase"}
         >
           <GoLocation color={"#5191FA"} />
@@ -153,12 +163,13 @@ function contact() {
         </Flex>
       </Flex>
       <Box
-        mt={"10rem"}
+        mt={["5rem", "5rem", "10rem"]}
         zIndex={"100"}
         width={"100%"}
         display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
+        justifyContent={["center", "center"]}
+        alignItems={("center", "center")}
+        mx={["auto", "auto"]}
       >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13217.550807480318!2d74.78689678412671!3d34.08520713954979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18ff699d0988d%3A0x872b77bb52a66cfd!2sKaran%20Nagar%2C%20Srinagar!5e0!3m2!1sen!2sin!4v1666418211597!5m2!1sen!2sin"

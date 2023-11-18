@@ -1,17 +1,18 @@
 import {
   Box,
-  Image,
   Flex,
   Heading,
   Text,
   Button,
   FormControl,
   Input,
+  Image
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import styles from "../styles/aboutus.module.css";
 import cards from "../components/Hoteldata";
 import Hotelcard from "../components/Hotelcard";
+// import Image from "next/image";
 
 function Hotels() {
   const [hotelCards, sethotelCards] = useState(cards);
@@ -26,18 +27,18 @@ function Hotels() {
       <Flex width={"100%"} flexDir={"column"}>
         <Box maxWidth={"100vw"} height={"40vh"}>
           <Image
-            src="https://www.greavesindia.com/wp-content/uploads/2016/11/pir_panjal_range_1920x1080.jpg"
+            src="/hotelcover.jpg"
             width={"100%"}
             height={"35vh"}
             objectFit={"cover"}
             backgroundPosition={"center"}
             loading={"lazy"}
+            alt=""
           />
         </Box>
       </Flex>
 
       <Box
-        // mx={"10"}
         display={"flex"}
         justifyContent={"center"}
         flexWrap={"wrap"}
@@ -49,6 +50,7 @@ function Hotels() {
           height={"350px"}
           borderRadius={"5"}
           boxShadow={"lg"}
+          display={["none", "none,", "flex"]}
         >
           <FormControl
             display={"flex"}
@@ -90,9 +92,9 @@ function Hotels() {
             </Button>
           </FormControl>
         </Flex>
-        <Flex maxWidth={"70vw"} flexWrap={"wrap"}>
+        <Flex maxWidth={["100vw", "100vw", "70vw"]} flexWrap={"wrap"}>
           <Text
-            fontSize={"3xl"}
+            fontSize={["xl", "xl", "3xl"]}
             fontWeight={"500"}
             mb={"8"}
             className={styles.heading}

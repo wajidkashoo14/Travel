@@ -1,17 +1,15 @@
-import { Container, Flex, Heading, Text, Box, Button } from "@chakra-ui/react";
+import { Container, Flex, Heading, Text, Box, color } from "@chakra-ui/react";
 import React from "react";
 import styles from "../styles/footer.module.css";
 import { GrFacebook } from "react-icons/gr";
 import { SiInstagram } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 function Footer() {
-  const router = useRouter();
   return (
     <Container
-      minH={"100vh"}
+      minH={"50vh"}
       maxW={"100%"}
       bg={"#06283d"}
       display={{ base: "block", md: "block", lg: "flex" }}
@@ -83,7 +81,6 @@ function Footer() {
           mt={{ base: "1rem", md: "3rem", lg: "0" }}
           bg={"#06283d"}
           ml={"3"}
-          // mx={{ base: "3", md: "3", lg: "0" }}
         >
           <Heading
             textTransform={"uppercase"}
@@ -97,24 +94,22 @@ function Footer() {
           </Heading>
           <Flex gap={"4"} flexDir={"column"} color={"#BECFD6"}>
             <Link className={styles.link} href="tours">
-              <Button>Tours</Button>
+              <a className={styles.a}> Tours</a>
             </Link>
             <Link className={styles.link} href="hotels">
-              <Button>Hotels</Button>
+              <a className={styles.a}> Hotels</a>
             </Link>
             <Link className={styles.link} href="/transport">
-              <Button>Transport</Button>
+              <a className={styles.a}> Transport</a>
             </Link>
-            <Button>
-              <Link className={styles.link} href="/activities">
-                Activities
-              </Link>
-            </Button>
-            <Button>
-              <Link className={styles.link} href="/blogs">
-                <a>Blogs</a>
-              </Link>
-            </Button>
+
+            <Link className={styles.link} href="/activities">
+              <a className={styles.a}> Activities</a>
+            </Link>
+
+            <Link className={styles.link} href="/blogs">
+              <a className={styles.a}>Blogs</a>
+            </Link>
           </Flex>
         </Flex>
         <Flex flexDir={"column"}>

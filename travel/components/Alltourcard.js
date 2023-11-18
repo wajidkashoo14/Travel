@@ -20,12 +20,13 @@ function Alltourcard({ cards }) {
       return (
         <Box
           display={"flex"}
+          flexDir={["column", "column", "row"]}
           onClick={() => router.push(`./tourdetails/${id}`)}
           key={id}
           fontFamily={"Montserrat"}
         >
           <Box
-            w={"300px"}
+            w={["100%", "100%", "300px"]}
             h={"430px"}
             boxShadow={"md"}
             display={"flex"}
@@ -104,10 +105,11 @@ function Alltourcard({ cards }) {
   return (
     <Box
       display={"flex"}
-      justifyContent={"center"}
+      justifyContent={["center", "center", "center"]}
       alignItems={"center"}
       gap={"10"}
       flexWrap={"wrap"}
+      width={["100%", "100%", ""]}
     >
       {displayCards}
       <Flex>

@@ -20,6 +20,7 @@ function blogs() {
           height={"35vh"}
           objectFit={"cover"}
           backgroundPosition={"center"}
+          alt=""
         />
       </Box>
     </Box>

@@ -6,3 +6,6 @@
 .link:visited {
   text-decoration: none;
 }
+.a:hover {
+  color: #fff;
+}
